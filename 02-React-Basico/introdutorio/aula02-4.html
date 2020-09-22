@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript vs React</title>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+</head>
+
+<body>
+
+  <div id="app-javascript">
+    <p>Total: <span id="total"></span></p>
+    <p>Preço: <span id="preco"></span></p>
+    <button id="button">Clicar</button>
+  </div>
+
+  <script type="application/javascript">
+    // Javascript puro
+    const total = document.getElementById('total')
+    const preco = document.getElementById('preco')
+    const btn = document.getElementById('button')
+
+    let i = 1;
+    const dadosDom = (contador) => {
+      total.innerText = contador;
+      preco.innerText = contador * 250;
+    }
+
+    dadosDom(i);
+
+    const handleClick = () => {
+      i += 1;
+      dadosDom(i)
+    }
+
+    btn.addEventListener('click', handleClick)
+  </script>
+
+  <div id="app-react"></div>
+
+  <script type="text/babel">
+
+    const App = () => {
+      
+      const [ contador, setContador ] = React.useState(1);
+      
+      function comprarClick() {
+        return setContador(contador + 1)
+      }
+      
+      return (
+        <div>
+        <p>Preço: {contador} </p>
+        <p>Total: {contador * 250} </p>
+        <button onClick={comprarClick}>Comprar</button>
+        </div>
+      )
+    }
+
+    ReactDOM.render(<App />, document.getElementById('app-react'))
+  </script>
+</body>
+
+</html>
