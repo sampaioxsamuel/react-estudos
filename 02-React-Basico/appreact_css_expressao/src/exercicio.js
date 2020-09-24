@@ -26,7 +26,7 @@ const mario = {
 const App = () => {
   const dados = mario;
 
-  const statusCliente = dados.ativa ? 'Ativa' : 'Inativa';
+  const statusCliente = dados.ativa;
   const totalCompras = dados.compras
     .map((item) => Number(item.preco.replace('R$ ', '')))
     .reduce((anterior, atual) => anterior + atual);
@@ -39,11 +39,11 @@ const App = () => {
         Situação:
         <span style={{ color: statusCliente ? 'green' : 'red' }}>
           {' '}
-          {statusCliente}
+          {statusCliente ? 'Ativa' : 'Inativa'}
         </span>
       </p>
       <p>Valor total de compras: R$ {totalCompras}</p>
-      {totalCompras > 10000 ? <p>Você esta gastando muito</p> : ''}
+      {totalCompras > 10000 && <p>'Você esta gastando muito'</p>}
     </div>
   );
 };
