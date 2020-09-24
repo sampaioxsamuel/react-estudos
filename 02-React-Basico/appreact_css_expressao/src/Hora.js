@@ -28,4 +28,4 @@ const App = () => {
   );
 };
 
-export default App; // ele vai renderizar no index.js qualquer uma das funções que eu passar aqui
+export default App; 
