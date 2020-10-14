@@ -1,0 +1,16 @@
+body {
+  font-family: 'JetBrains Mono';
+}
+.produto {
+  color: rebeccapurple;
+}
+.preco {
+  font-weight: bold;
+}
+
+.button {
+  border: 2px solid rebeccapurple;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px;
+}

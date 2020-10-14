@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+function Footer() {
   return (
     <footer>
-      <h1>Isso é um footer =´)</h1>
+      <p>Todos os direitos reservados</p>
     </footer>
   );
-};
+}
 
 export default Footer;

@@ -1,0 +1,22 @@
+body {
+    font-family: 'Fira Code';
+    font-size: 20px;
+    background: #1a1a2e;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.navbar {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+}
