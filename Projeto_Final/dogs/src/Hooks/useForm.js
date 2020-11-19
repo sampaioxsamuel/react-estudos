@@ -10,6 +10,10 @@ const types = {
     message:
       'Precisa ter no minimo 8 caracteres, tendo pelo menos 1 digito, 1 letra maiúscula e 1 minúsculo',
   },
+  number: {
+    regex: /^\d+$/,
+    message: 'Utilize numeros apenas',
+  },
 };
 
 const useForm = (type) => {
