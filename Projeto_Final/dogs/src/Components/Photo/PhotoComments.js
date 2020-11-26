@@ -10,7 +10,7 @@ const PhotoComments = (props) => {
   const { login } = useContext(UserContext);
 
   useEffect(() => {
-    commentsSection.current.scrollTop = -commentsSection.current.scrollHeight;
+    commentsSection.current.scrollTop = commentsSection.current.scrollHeight;
   }, [comments]);
 
   return (
