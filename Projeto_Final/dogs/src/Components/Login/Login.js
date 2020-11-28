@@ -6,6 +6,7 @@ import LoginPasswordReset from './LoginPasswordReset';
 import NotFound from '../NotFound';
 import { useContext } from 'react';
 import { UserContext } from '../../UserContext';
+import Head from '../Helper/Head';
 
 import styles from './Login.module.css';
 

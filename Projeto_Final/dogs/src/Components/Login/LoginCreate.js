@@ -4,6 +4,7 @@ import { useFetch } from '../../Hooks/useFetch';
 import useForm from '../../Hooks/useForm';
 import { UserContext } from '../../UserContext';
 import Error from '../Helper/Error';
+import Head from '../Helper/Head';
 
 const { default: Button } = require('../Forms/Button');
 const { default: Input } = require('../Forms/Input');
@@ -28,6 +29,7 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
+      <Head title="Criar conta" />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuario" type="text" name="username" {...username} />

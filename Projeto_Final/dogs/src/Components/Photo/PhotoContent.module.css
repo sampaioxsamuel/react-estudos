@@ -27,8 +27,19 @@
   grid-row: 1/4;
 }
 
-.comments {
-  padding: 0 2rem;
+.single .img {
+  grid-row: 1;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.single.photo {
+  grid-template-columns: 1fr;
+  height: auto;
+}
+
+.single .details {
+  padding: 1rem 0 0 0;
 }
 
 .author {
