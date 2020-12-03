@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import { PHOTO_GET } from '../../api';
 import { useFetch } from '../../Hooks/useFetch';
 import Error from '../Helper/Error';

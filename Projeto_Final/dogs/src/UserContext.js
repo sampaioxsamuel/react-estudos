@@ -1,5 +1,5 @@
 import { createContext, useCallback, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { TOKEN_VALIDATE_POST, TOKEN_POST, USER_GET } from './api';
 
 export const UserContext = createContext();

@@ -6,7 +6,7 @@ import useForm from '../../Hooks/useForm';
 import { useFetch } from '../../Hooks/useFetch';
 import { useEffect, useState } from 'react';
 import { PHOTO_POST } from '../../api';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import Head from '../Helper/Head';
 
 const UserPhotoPost = () => {
